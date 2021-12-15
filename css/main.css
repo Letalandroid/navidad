@@ -3,11 +3,14 @@
     padding: 0;
 }
 
-.container {
+body {    
     background: url("../src/img/background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.container {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,4 +21,36 @@ span {
     color: #8d1814;
     font-size: 10em;
     font-family: 'Mountains of Christmas', cursive;
+}
+
+@media screen and (max-width: 1270px) {
+
+    .container {
+        transform: scale(.8);
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        transform: scale(.65);
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+
+    .container {
+        transform: scale(.5);
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+
+    .container {
+        transform: scale(.3) rotate(90deg);
+    }
+
 }
